@@ -1,0 +1,220 @@
+
+/*section 1 bg and height*/
+.main-section{
+  height : 500px;
+}
+.main-section-cover-bg{
+  background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+  height : 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*navbar*/
+.logo{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.menu-links{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 2rem;
+
+}
+.mealTypeCard{
+  width:30%;
+  float: left;
+  margin: 1%;
+  display:inline-block;
+}
+/*.menu-list-links{
+  padding-top: 10px;
+}
+.menu-list{
+  list-style: none;
+  display: flex;
+  float: right;
+}*/
+/*Title logo and search bar in section 1*/
+.heading-paragraph{
+  text-align: center;
+  padding-top: 3rem;
+}
+.title-logo{
+  height: 60px;
+  width: 300px;
+}
+.heading-paragraph p{
+  margin-top: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 38px;
+}
+.search-bar-main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.your-search-is-here{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.search-bar-inner{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+  border: 1px solid rgb(232, 232, 232);
+  width: 60%;
+}
+.location-search{
+  border-right: 2px;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-style: solid;
+  text-align: center;
+}
+.restaurant-search{
+  text-align: center;
+}
+.location-select-options{
+  width: 80%;
+  border: none;
+  padding-left: 6px;
+}
+.resturent-search-section{
+  text-align: center;
+}
+.resturent-search{
+  width: 85%;
+  border: none;
+}
+/*--section 2 starting...
+.cards{
+  border-radius: 10px;
+  
+  border-style: solid;
+  border-color: rgb(209, 206, 206);
+  border: 1px;
+  height:300px;
+  width: 90%;
+}*/
+.images-section{
+  height: 200px;
+  overflow: hidden;
+}
+
+.images-section img{
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.cards-body{
+  margin-top: 1rem;
+  padding-left: 14px;
+}
+.zoom-effect{
+  transition: transform .3s;
+}
+.zoom-effect:hover{
+  transform: scale(1.1);
+}
+/*Restaurant cards section*/
+.restaurants-h-p p{
+ margin-bottom: 0px;
+}
+.right-arrow{
+  align-self: center;
+  text-align: end;
+}
+.right-arrow img{
+  width: 22px;
+}
+
+/*Food Item display section */
+.foodItemHeaderBg{
+ 
+  background-color: #240101;
+  color:white;
+  text-align: center;
+  justify-content: center;
+
+}
+/* placeOrder */
+.card-title h5{
+ color: white;
+}
+
+/*media queries for section 1 */
+
+@media screen and (max-width: 320px) {
+  .title-logo {
+      height: 30px;
+      width: 150px;
+  }
+  .heading-paragraph p {
+      font-size: 20px;
+  }
+  
+  .location-search {
+      border-right: 0; 
+      border-style: none;
+      width: 100%;
+
+  }
+  .search-bar-inner {
+      display: flex;
+      height: 110px;
+      width: 90%;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+  }
+  .resturent-search-section {
+      padding-left: 8px;
+      width: 100%;
+  }
+
+
+}
+/*css for listing page*/
+.main-content{
+  width: 100%;
+  display: flex
+}
+#filter{
+  border-style: solid;
+  border-color: black;
+  height: 800px;
+}
+.data-img img{
+  width: 400px;
+  height: 266px;
+  overflow: hidden;
+}
+.listing-data{
+  padding-left: 4% !important;
+}
+
+/*css for details page*/
+.details-main{
+  margin-top: 60px
+}
+.img-card{
+  height: 350px;
+  border-radius: 10px;
+}
+.img-card img{
+  height: 380px;
+  width: auto;
+  border-radius: 6px;
+}
