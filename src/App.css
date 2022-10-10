@@ -153,6 +153,11 @@
 .card-title h5{
  color: white;
 }
+.card img{
+  height: 280px;
+  width: 100%;
+  overflow: hidden;
+}
 
 /*media queries for section 1 */
 

@@ -2,7 +2,7 @@ import React,{useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 
 const url = "http://zomatoajulypi.herokuapp.com/menuItem";
-// const PlaceOrder = "http://localhost:9870/orders" 
+const OrderPlaced = "http://localhost:9870/orders" 
 
 
 
@@ -56,8 +56,8 @@ function PlaceOrder(){
         if(data){
             return data.map((item) => {
                 return(
-                    <div className="col-md-4">
-                        <div className="card" key={item.menu_id}>
+                    <div className="col-md-3">
+                        <div className="card mb-4" key={item.menu_id}>
                             <img className="card-img-top" src={item.menu_image} alt={item.menu_name}/>
                             <div className="card-body">
                                 <h3>{item.menu_name}</h3>
@@ -76,7 +76,7 @@ function PlaceOrder(){
     return(
         <>
         <div className="container pt-5">
-               <div className="card ">
+               <div className="card mb-5">
                    <div className="card-title p-3 bg-primary">
                     <h5>Your Order From Restaurant <b>{(restName)}</b> </h5>
                    </div>

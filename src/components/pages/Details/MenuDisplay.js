@@ -9,13 +9,15 @@ function MenuDisplay(props) {
     const placeOrder = (id) =>{
         setCartItems(cartItem.push(id))
         console.log("item :" , cartItem);
+        props.finalOrder(cartItem)
     }
    
     const  removeOrder = (id) => {
         if(cartItem.indexOf(id)>-1){
             setCartItems(cartItem.splice(cartItem.indexOf(id),1))
             
-            console.log('remove',cartItem)
+            console.log('remove',cartItem);
+            props.finalOrder(cartItem)
      
             
         }
@@ -97,7 +99,7 @@ function MenuDisplay(props) {
                     
                     
                 </div>
-                <div className="col-md-12">
+                <div className="col-md-12 mb-5">
                     {renderMenu(props)}
                  
                 </div>
